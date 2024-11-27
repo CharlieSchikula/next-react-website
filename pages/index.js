@@ -15,8 +15,8 @@ export default function Home({ posts }) {
     <Container>
       <Meta />
       <Hero
-        title="Practice makes purr-fect"
-        subtitle={"アウトプットしていくサイト"}
+        title="楽しんで学ぶ"
+        subtitle={"個人的な学びをアウトプットしていくサイト"}
         imageOn
       />
 

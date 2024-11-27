@@ -12,12 +12,9 @@ export default function Posts({ posts }) {
               <Image
                 src={eyecatch.url}
                 alt=""
-                width={eyecatch.width}
-                height={eyecatch.height}
+                fill
                 sizes="(min-width: 1152px) 576px, 50vw"
                 style={{
-                  width: "100%",
-                  height: "auto",
                   objectFit: "cover",
                 }}
                 placeholder="blur"

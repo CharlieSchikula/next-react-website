@@ -7,7 +7,7 @@ const { siteTitle, siteDescription, siteUrl, siteLocale, siteType, siteIcon } =
   siteMeta;
 
 // 汎用OGP画像
-import siteImg from "@/images/ogp.jpg";
+import siteImg from "@/images/ogp.png";
 
 export default function Meta({
   pageTitle,

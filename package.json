@@ -17,6 +17,7 @@
     "date-fns": "^4.1.0",
     "html-react-parser": "^5.1.18",
     "html-to-text": "^9.0.5",
+    "jsdom": "^25.0.1",
     "microcms-js-sdk": "^3.1.2",
     "next": "15.0.3",
     "plaiceholder": "^3.0.0",

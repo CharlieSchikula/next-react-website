@@ -8,7 +8,7 @@ import {
   TwoColumnMain,
   TwoColumnSidebar,
 } from "@/components/two-column";
-// import Accordion from "@/components/accordion";
+import Accordion from "@/components/accordion";
 import Image from "next/image";
 import eyecatch from "@/images/about.jpg";
 
@@ -29,7 +29,7 @@ export default function About() {
         <Image
           src={eyecatch}
           alt="eyecatch"
-          size="(min-width: 1152px) 1152px, 100vw"
+          size="(min-width: 1024px) 512px, (min-width: 768px) 50vw, 100vw"
           style={{
             width: "100%",
             height: "auto",
@@ -42,40 +42,73 @@ export default function About() {
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Molestias ducimus ullam enim, laborum ea minus consequatur itaque
-              eaque illo quisquam sequi necessitatibus rerum nulla tenetur
-              temporibus quasi excepturi iusto voluptas!
-            </p>
+            <div>
+              猫好きの未経験エンジニアが、個人的な学びをアウトプットしていくサイトです。
+              <br />
+              ポートフォリオの一環として作成したため、現時点ではアウトプットが少ないですが、今後更新していきます。
+              <br />
+              アコーディオンメニューを作りたかったので、以下で自己紹介します。
+            </div>
 
-            <h2>適当な文章</h2>
-            {/* <Accordion heading="テスト①">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Molestias ducimus ullam enim, laborum ea minus consequatur
-                itaque eaque illo quisquam sequi necessitatibus rerum nulla
-                tenetur temporibus quasi excepturi iusto voluptas!
-              </p>
+            <h2>プロフィール</h2>
+            <Accordion heading="自己紹介">
+              <div>
+                34歳男、千葉在住、既婚、猫2匹（ロシアンブルー、ブリティッシュショートヘア）を飼っています。
+                猫から癒しをもらいながら、日々楽しんで生きています。
+              </div>
             </Accordion>
 
-            <Accordion heading="テスト②">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Molestias ducimus ullam enim, laborum ea minus consequatur
-                itaque eaque illo quisquam sequi necessitatibus rerum nulla
-                tenetur temporibus quasi excepturi iusto voluptas!
-              </p>
+            <Accordion heading="過去の経歴について">
+              <div>
+                <ol style={{ paddingLeft: 0, listStyleType: "none" }}>
+                  <li>（1社目）環境エネルギーコンサルタント</li>
+                  <li>（2社目）人材育成・組織開発コンサルタント</li>
+                  <li>
+                    （3社目）SaaSスタートアップの営業チームリーダー・新規事業開発
+                  </li>
+                  <li>
+                    （4社目）ヘルスケアスタートアップの研究開発マネージャー・新規事業開発
+                  </li>
+                </ol>
+                という一見バラバラな経歴を辿ってきており、ベースとしては問題解決やプロジェクトマネジメントのスキルを活かして仕事をしてきました。
+                <br />
+                新しいことを学ぶのが好きなこと、また34歳になり未経験で新しい領域に飛び込む難易度が今後上がっていくと考えたことから、このタイミングでエンジニア転職を決意しました。
+              </div>
             </Accordion>
 
-            <Accordion heading="テスト③">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Molestias ducimus ullam enim, laborum ea minus consequatur
-                itaque eaque illo quisquam sequi necessitatibus rerum nulla
-                tenetur temporibus quasi excepturi iusto voluptas!
-              </p>
-            </Accordion> */}
+            <Accordion heading="スキルセット">
+              <div>
+                2024.11現在
+                <ul
+                  style={{
+                    paddingLeft: 0,
+                    listStyleType: "none",
+                  }}
+                >
+                  <li style={{ marginTop: 10 }}>【ビジネススキル】</li>
+                  <ul>
+                    <li>クリティカルシンキング（法人研修講師の経験あり）</li>
+                    <li>問題解決</li>
+                    <li>ファシリテーション</li>
+                    <li>プレゼンテーション</li>
+                    <li>プロジェクトマネジメント</li>
+                  </ul>
+
+                  <li style={{ marginTop: 10 }}>【エンジニアスキル】</li>
+                  <ul>
+                    <li>
+                      SaaSプロダクトの要件定義（ユーザーインタビュー、ユーザーストーリー作成）
+                    </li>
+                    <li>プログラミング（いずれも初級レベル）</li>
+                    <ul>
+                      <li>HTML, CSS, JavaScript（React, Next.js）</li>
+                      <li>Python</li>
+                      <li>SQL（PostgreSQL）</li>
+                    </ul>
+                  </ul>
+                </ul>
+              </div>
+            </Accordion>
           </PostBody>
         </TwoColumnMain>
         <TwoColumnSidebar>

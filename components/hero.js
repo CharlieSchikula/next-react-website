@@ -1,6 +1,6 @@
 import styles from "@/styles/hero.module.css";
 import Image from "next/image";
-import purrgrammer from "@/images/purrgrammer.jpg";
+import thesecondbestday from "@/images/thesecondbestday.jpg";
 
 export default function Hero({ title, subtitle, imageOn = false }) {
   return (
@@ -12,8 +12,8 @@ export default function Hero({ title, subtitle, imageOn = false }) {
       {imageOn && (
         <figure className={styles.image}>
           <Image
-            src={purrgrammer}
-            alt="programming cat"
+            src={thesecondbestday}
+            alt="the second best day quote"
             sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
             style={{
               width: "100%",
