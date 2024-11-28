@@ -16,20 +16,25 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
-    }
+    };
     router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-  
+
   return (
     <>
-      <Script src={"https://www.googletagmanager.com/gtag/js?id={$gtag.GA_MEASUREMENT_ID}"} strategy="afterInteractive" />
+      <Script
+        src={
+          "https://www.googletagmanager.com/gtag/js?id={$gtag.GA_MEASUREMENT_ID}"
+        }
+        strategy="afterInteractive"
+      />
       <Script
         id="gtag-init"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{{
+        dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -37,9 +42,9 @@ export default function MyApp({ Component, pageProps }) {
       
             gtag("config", "${gtag.GA_MEASUREMENT_ID}");
           `,
-        }} 
+        }}
       />
-    
+
       <Layout>
         <Component {...pageProps} />
       </Layout>
