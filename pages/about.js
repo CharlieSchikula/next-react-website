@@ -17,13 +17,13 @@ export default function About() {
     <Container>
       <Meta
         pageTitle="About"
-        pageDescription="About development activities"
+        pageDescription="About me"
         pageImage={eyecatch.src}
         pageImageWidth={eyecatch.width}
         pageImageHeight={eyecatch.height}
       />
 
-      <Hero title="About" subtitle="About development activities" />
+      <Hero title="About" subtitle="About me" />
 
       <figure>
         <Image
@@ -43,18 +43,18 @@ export default function About() {
         <TwoColumnMain>
           <PostBody>
             <div>
-              猫好きの未経験エンジニアが、個人的な学びをアウトプットしていくサイトです。
+              猫好きの未経験エンジニアが、個人的な学びをアウトプットしていくサイト。
               <br />
-              ポートフォリオの一環として作成したため、現時点ではアウトプットが少ないですが、今後更新していきます。
+              ポートフォリオの一環として作成したため、現時点ではアウトプットが少ないが、今後更新していく予定。
               <br />
-              アコーディオンメニューを作りたかったので、以下で自己紹介します。
+              アコーディオンメニューを作りたかったので、以下で自己紹介する。
             </div>
 
             <h2>プロフィール</h2>
             <Accordion heading="自己紹介">
               <div>
-                34歳男、千葉在住、既婚、猫2匹（ロシアンブルー、ブリティッシュショートヘア）を飼っています。
-                猫から癒しをもらいながら、日々楽しんで生きています。
+                34歳男、千葉在住、既婚、猫2匹（ロシアンブルー、ブリティッシュショートヘア）を飼っている。
+                猫から癒しをもらいながら、日々楽しんで生きている。
               </div>
             </Accordion>
 
@@ -70,9 +70,9 @@ export default function About() {
                     （4社目）ヘルスケアスタートアップの研究開発マネージャー・新規事業開発
                   </li>
                 </ol>
-                という一見バラバラな経歴を辿ってきており、ベースとしては問題解決やプロジェクトマネジメントのスキルを活かして仕事をしてきました。
+                という一見バラバラな経歴を辿ってきており、ベースとしては問題解決やプロジェクトマネジメントのスキルを活かして仕事をしてきた。
                 <br />
-                新しいことを学ぶのが好きなこと、また34歳になり未経験で新しい領域に飛び込む難易度が今後上がっていくと考えたことから、このタイミングでエンジニア転職を決意しました。
+                諸事情あって仕事を辞めて数ヶ月間の離職期間があったが、新しいことを学ぶのが好きなこと、また34歳になり未経験で新しい領域に飛び込む難易度が今後上がっていくと考えたことから、このタイミングでエンジニア転職を決意した。
               </div>
             </Accordion>
 

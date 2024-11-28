@@ -1,13 +1,15 @@
 import parse from "html-react-parser";
-import Image from "next/image";
 import BlogCard from "@/components/blogcard";
+import ZoomOnClick from "@/components/zoom-on-click";
 
 export default function ConvertBody({ contentHTML, cardDatas }) {
   const contentReact = parse(contentHTML, {
     replace: (node) => {
       if (node.name === "img") {
         const { src, alt, width, height } = node.attribs;
-        return <Image src={src} alt={alt} width={width} height={height} />;
+        return (
+          <ZoomOnClick src={src} alt={alt} width={width} height={height} />
+        );
       }
       if (node.name === "a") {
         const { href } = node.attribs;
@@ -15,7 +17,7 @@ export default function ConvertBody({ contentHTML, cardDatas }) {
         if (cardData) {
           return <BlogCard key={`${href}-card`} cardData={cardData} />;
         }
-        // If no cardData is found, you can choose to return null or the original link
+        // If no cardData is found, return the original link
         return (
           <a
             key={href}
@@ -30,9 +32,7 @@ export default function ConvertBody({ contentHTML, cardDatas }) {
           </a>
         );
       }
-      if (node.name === "p") {
-        return <div>{node.children.map((child, index) => parse(child))}</div>;
-      }
+
       return node;
     },
   });
