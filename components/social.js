@@ -12,7 +12,7 @@ export default function Social({ iconSize = "initial" }) {
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/shun-s-b7b64216b/">
+        <a href="https://www.linkedin.com/in/shun-s-foobar/">
           <FaLinkedin />
           <span className="sr-only">LinkedIn</span>
         </a>
